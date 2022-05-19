@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Header from './component/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Add from './component/Add';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path="/" exact e
+      <Route path="/" exact element={<Add/>}/>
     </Routes>
     
     </BrowserRouter>
